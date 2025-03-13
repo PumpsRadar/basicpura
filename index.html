@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PumpsRadar - Real-Time Solana Token Early Radar & Crypto Audit Risk Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Meta Description -->
+    <meta name="description" content="PumpsRadar is a real-time Solana token audit & risk scanner. Automatically scans new and existing tokens every 5 minutes to detect trends and identify the next big move.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="Solana, crypto, token audit, risk scanner, PumpsRadar, Solana tokens, crypto analytics, pump.fun, crypto trading, crypto radar, early solana token">
+
+    <!-- Meta Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PumpsRadar - Real-Time Solana Token Audit & Crypto Risk Scanner">
+    <meta property="og:description" content="Discover real-time Solana token analysis with PumpsRadar. Track and audit new tokens automatically every 5 minutes.">
+    <meta property="og:image" content="https://pumpsradar.com/images/pura1200x630.png">
+    <meta property="og:url" content="https://pumpsradar.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PumpsRadar - Real-Time Solana Token Audit & Crypto Risk Scanner">
+    <meta name="twitter:description" content="Find hidden Solana gems with PumpsRadar. Auto-scanning potential tokens every 5 minutes!">
+    <meta name="twitter:image" content="https://pumpsradar.com/images/pura1200x630.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pumpsradar.com">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://pumpsradar.com/images/pura64x64.png">
+
+    <!-- JSON-LD Schema (Website Information) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "PumpsRadar",
+        "url": "https://pumpsradar.com",
+        "description": "PumpsRadar is a real-time Solana token audit & risk scanner that detects the next big move every 5 minutes.",
+        "image": "https://pumpsradar.com/images/pura500x500.png",
+        "publisher": {
+            "@type": "Organization",
+            "name": "PumpsRadar",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://pumpsradar.com/images/pura500x500.png"
+            }
+        }
+    }
+    </script>
+
+    <!-- FAQ Schema Markup for Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is PumpsRadar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PumpsRadar is a real-time Solana token audit & risk scanner that detects potential tokens every 5 minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does PumpsRadar work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PumpsRadar will help you detect early gems solana tokens, also will help you to scans trading activity, social media trends, and liquidity to detect the next big move in Solana ecosystem."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ✅ Headeer Image -->
+        <!-- ✅ Header dengan Logo + Link Telegram & Twitter -->
+<div class="header-container">
+    <!-- ✅ Logo PumpsRadar -->
+    <img src="https://i.ibb.co.com/Dgrn3J9J/Photoroom-20250211-105140.png" alt="Crypto Token Scanner" class="header-logo">
+
+    <!-- ✅ Link Telegram & Twitter -->
+    <div class="social-links">
+        <a href="https://t.me/pumps_radar" target="_blank">Telegram</a> |
+        <a href="https://x.com/pumps_radar" target="_blank">Twitter</a>
+    </div>
+</div>
+        <p>Scan a Solana token to analyze its risk and potential.</p>
+
+        <!-- ✅ Input Token -->
+        <input type="text" id="tokenInput" placeholder="Enter token address">
+        <button id="scanButton">🔍 Scan</button>
+
+        <!-- ✅ Slot Iklan 1 (Di bawah tombol scan) -->
+        <a href="https://x.com/pumps_radar" target="_blank">
+            <img src="https://i.ibb.co.com/v46MpSf4/adsban988999-picsay.png" class="ad-slot" alt="Sponsored Ad">
+        </a>
+
+        <!-- ✅ Spinner UI -->
+        <div class="spinner-container">
+            <div class="spinner"></div>
+            <div class="indicator"></div>
+        </div>
+
+        <!-- ✅ Slot Iklan 2 (Di atas hasil scanning) -->
+        <a href="https://t.me/pumps_radar" target="_blank">
+            <img src="https://i.ibb.co.com/N25DntcF/adsban9889.png" class="ad-slot" alt="Crypto Project Promo">
+        </a>
+
+        <!-- ✅ Audit Result Section (Sekarang di atas iklan 3) -->
+        <div class="audit-result-container">
+            <h2 class="audit-result-title">🔍 Audit Result</h2>
+            <div id="result"></div>
+        </div>
+
+        <!-- ✅ Slot Iklan 3 (Sekarang di bawah Audit Result) -->
+        <a href="https://t.me/apethusiast" target="_blank">
+            <img src="https://i.ibb.co.com/1fHsDnjr/adsbanner1.png" class="ad-slot" alt="Trending Crypto Ad">
+        </a>
+
+        <!-- ✅ Early Radar Section -->
+        <div class="early-radar-container">
+    <h2>🚀 Early Radar</h2>
+    <button id="loadEarlyRadar">🔄 Show Tokens</button>
+    <a href="https://forms.gle/X1dUSvkg4KdhsYXb8" target="_blank">
+        <button id="proPlanButton">💎 Premium Plan</button>
+    </a>
+    <div id="early-radar-list">
+        <p>Click "Show Tokens" to load.</p>
+    </div>
+</div>
+
+        <!-- ✅ Slot Iklan 4 (Di dalam Early Radar) -->
+        <a href="https://t.me/apethusiast" target="_blank">
+            <img src="https://i.ibb.co.com/1fHsDnjr/adsbanner1.png" class="ad-slot" alt="Early Project Ads">
+        </a>
+
+        <!-- ✅ Slot Iklan 5 (Di bagian footer) -->
+        <a href="https://t.me/apethusiast" target="_blank">
+            <img src="https://i.ibb.co.com/spvmHV26/footerads.png" class="footer-ad" alt="Crypto Partnership & Promotions">
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
