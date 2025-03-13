@@ -70,7 +70,7 @@ function scanToken() {
             fastSpins--;
             setTimeout(animateFastSpin, spinSpeed);
         } else {
-            fetch(`https://micinscore.vercel.app/api/audit/${tokenAddress}`)
+            fetch(`https://basicbend.vercel.app/api/audit/${tokenAddress}`)
                 .then(response => response.json())
                 .then(data => {
     console.log("📊 API Response:", data);
@@ -170,7 +170,7 @@ async function fetchEarlyRadar(forceRefresh = false) {
 
     try {
         console.log("📡 Fetching Early Radar data...");
-        const response = await fetch(`https://micinscore.vercel.app/api/early-radar?t=${Date.now()}`, {
+        const response = await fetch(`https://basicbend.vercel.app/api/early-radar?t=${Date.now()}`, {
             method: "GET",
             headers: {
                 "Cache-Control": "no-store"
